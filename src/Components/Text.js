@@ -1,11 +1,9 @@
 import React from "react"
-import Text from "./Text"
 
-function Instructions(props) {
+function Text() {
     return(
         <div>
             <p>
-            <p>Par exemple, justify-content: flex-end; bougera la grenouille vers la droite.</p>
                 <ul>
                     <li>flex-start : Les éléments s'alignent au côté gauche du conteneur.</li>
                     <li>flex-end : Les éléments s'alignent au côté droit du conteneur.</li>
@@ -18,4 +16,4 @@ function Instructions(props) {
     )
 }
 
-export default Instructions
+export default Text
