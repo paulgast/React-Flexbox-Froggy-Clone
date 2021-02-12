@@ -14,7 +14,7 @@ function Instructions() {
                         <li>{"space-between : Les éléments s'affichent avec un espace égal entre eux."}</li>
                         <li>{"space-around : Les éléments s'affichent avec un espacement égal à l'entour d'eux."}</li>
                     </ul>
-                    <p>{"Par exemple, justify-content: flex-end; bougera la grenouille vers la droite"}</p>
+                    <p>{"Par exemple, justify-content: flex-end; bougera la grenouille vers la droite."}</p>
                 </p>
             </div>
         </Text>

@@ -3,7 +3,7 @@ import React from "react"
 function Pond() {
     return(
         <div className="Pound">
-            <h3>This is the pond</h3>
+            <h3>Voici la mare. Elle devra retourner les grenouilles en fonction du niveau</h3>
         </div>
     )
 }

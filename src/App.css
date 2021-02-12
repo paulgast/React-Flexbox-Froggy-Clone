@@ -32,5 +32,24 @@ body {
   color:white;
   width: 600px;
   text-align: justify;
-  font-size: 13px;
+  font-size: 15px;
+}
+
+.lineNumber{
+  background-color: #999999;
+  width: 35px;
+  padding: 10px 6px;
+  text-align: right;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.lineNumber p {
+  color: #D5D5D5;
+  font-family:'Source Code Pro', monospace;
+}
+
+.editor {
+  display: flex;
+  flex-direction: row;
 }
