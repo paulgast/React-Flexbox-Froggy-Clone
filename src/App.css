@@ -10,13 +10,13 @@
 
 body {
   background-color: #43A048;
-  height: 1000px;
+  height: 1500px;
 }
 
 .Pound {
   background-color: #1f5768;
   display: flex;
-  width: 350px;
+  width: 50%;
   height: 300px;
   padding: 1em;
   border-bottom-left-radius: 10px;
@@ -29,16 +29,24 @@ body {
 }
 
 .text {
-  color:white;
-  width: 600px;
+  max-width: 600px;
+  margin: 0px 30px;
   text-align: justify;
   font-size: 15px;
+  line-height: 1.5;
+  color:white;
 }
 
+.bold {
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+  background-color:#69B36D;
+}
 
 .editor {
   display: flex;
   flex-direction: row;
+  margin: 0 auto;
   font-family: 'Source Code Pro', monospace;
   font-size: 16px;
 }
@@ -66,6 +74,12 @@ body {
 }
 
 .Css input {
+  width: 80%;
+  margin-left: 20px;
   border-style:none;
   outline:none;
+}
+
+.tabulation {
+  margin-left: 20px;
 }
