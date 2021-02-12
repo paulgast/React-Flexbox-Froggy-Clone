@@ -27,3 +27,10 @@ body {
   font-family: "Fredoka One", cursive;
   color: #D9ECDA;
 }
+
+.text {
+  color:white;
+  width: 600px;
+  text-align: justify;
+  font-size: 13px;
+}
