@@ -1,23 +1,47 @@
-import React, {useState} from "react"
+import React, {Component, useState} from "react"
 
-function LevelButton(){
+class LevelButton extends Component {
 
-    const [level, setLevel] = useState(1)
-
-    function decrement() {
-        setLevel(prevLevel => prevLevel - 1)
+    constructor(props) {
+        super(props)
+        this.state = {
+            level: 1
+        }
+        this.decrement = this.decrement.bind(this);
+        this.increment = this.increment.bind(this);
     }
 
-    function increment() {
-        setLevel(prevLevel => prevLevel + 1)
+    decrement() {
+        this.setState(state => ({
+            level: state.level - 1
+        })
+        )
     }
+
+    increment() {
+        this.setState(state => ({
+            level: state.level + 1
+        })
+        )
+    }
+
+    render() {
+
         return(
         <div>
-            <button className="levelButton"onClick = { decrement } >◢</button>
-            <button className="levelButton">Niveau {level} de 24 ▼</button>
-            <button className="levelButton"onClick = { increment }>◣</button>
+            {this.state.level <= 1 ? 
+            <button className="levelButton" disabled style={{backgroundColor: 'rgba(255,255,255,0.5)'}}>◢</button> :
+            <button className="levelButton" onClick = { this.decrement }>◢</button>
+            } 
+
+            <button className="levelButton" >Niveau {this.state.level} de 24 ▼</button>
+
+            {this.state.level >= 24 ?
+            <button className="levelButton" disabled style={{backgroundColor: 'rgba(255,255,255,0.5)'}}>◣</button> :
+            <button className="levelButton" onClick = { this.increment }>◣</button>
+            }
         </div>
-        )
+        )}
     }
 
 export default LevelButton
