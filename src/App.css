@@ -35,13 +35,20 @@ body {
   font-size: 15px;
 }
 
+
+.editor {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 16px;
+}
+
 .lineNumber{
   background-color: #999999;
-  width: 35px;
-  padding: 10px 6px;
   text-align: right;
-  font-size: 18px;
-  line-height: 1.5;
+  padding: 0px 6px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .lineNumber p {
@@ -49,7 +56,16 @@ body {
   font-family:'Source Code Pro', monospace;
 }
 
-.editor {
-  display: flex;
-  flex-direction: row;
+.Css {
+  min-width: 300px;
+  color: #777;
+  background-color: #E0E0E0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 0px 6px;
+}
+
+.Css input {
+  border-style:none;
+  outline:none;
 }

@@ -2,16 +2,14 @@ import React from "react"
 
 function Css() {
     return (
-        <div>
-            <h3>
-                #pond:
-                    display: flex;
+        <div className="Css">
+            <p>#pond</p>
+            <p>         display display: flex;</p>
                     <form>
                         <label>
                             <input type="text" name="name" />
                         </label>
                     </form>
-            </h3>
         </div>
     )
 }
