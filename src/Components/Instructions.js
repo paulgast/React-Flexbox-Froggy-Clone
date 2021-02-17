@@ -1,18 +1,14 @@
-import React, { Component } from "react"
+import React, { useContext } from "react"
 import LevelButton from "./LevelButton"
+import { UserContext } from "./UserContext"
 
 
-class Instructions extends Component {
-
-    state = { level: 1 }
-
-    render() {
+function Instructions() {
         return(
-            <LevelButton/>
-    )}
+            <h1>Hello</h1>
+        )
+
 }
 
 export default Instructions
-
-
 

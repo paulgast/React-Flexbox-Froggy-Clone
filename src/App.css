@@ -92,3 +92,13 @@ body {
 .tabulation {
   margin-left: 20px;
 }
+
+.dark-theme {
+  background-color: #333333;
+  color: whitesmoke;
+}
+
+.light-theme {
+  background-color: whitesmoke;
+  color: #333333;
+}

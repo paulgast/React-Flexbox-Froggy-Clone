@@ -4,7 +4,8 @@ import Instructions from "./Components/Instructions"
 import Editor from "./Components/Editor/Editor"
 import Title  from "./Components/Title"
 import LevelButton from "./Components/LevelButton"
-import Parent from "./Components/test/Parent"
+
+import Composant1 from "./Components/Editor/Composant1"
 
 function App() {
   return (
@@ -12,9 +13,9 @@ function App() {
       <div className="MContainer">
         <Pond className='hello'/>
         <Title/>
+        <Composant1/>
         <Instructions/>
         <Editor/>
-        <Parent/>
       </div>
     </div>
   );
