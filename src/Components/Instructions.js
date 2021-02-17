@@ -1,6 +1,5 @@
 import React, { useContext } from "react"
 import LevelButton from "./LevelButton"
-import { UserContext } from "./UserContext"
 
 
 function Instructions() {

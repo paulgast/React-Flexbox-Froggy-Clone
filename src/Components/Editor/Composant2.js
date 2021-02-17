@@ -1,5 +1,5 @@
 import React, { useContext } from "react"
-import { ComposantContext } from "./ComposantContextContext"
+import { ComposantContext } from "./ComposantContext"
 
 
 function Composant2() {
