@@ -1,50 +1,26 @@
-import React, {Component} from "react"
-import levelsData from "./levelsData"
+import React from "react"
+import {LevelContextConsumer} from "./LevelContext"
 
-class LevelButton extends Component {
-
-    constructor(props) {
-        super(props)
-        this.state = {
-            level: 1
-        }
-        this.decrement = this.decrement.bind(this);
-        this.increment = this.increment.bind(this);
-    }
-
-    decrement() {
-        this.setState(state => ({
-            level: state.level - 1
-        })
-        )
-    }
-
-    increment() {
-        this.setState(state => ({
-            level: state.level + 1
-        })
-        )
-    }
-
-
-    render() {
-
-        return(
-            <div>
+function LevelButton(props) {
+    return (
+        <LevelContextConsumer>
+            {context => (
                 <div>
-                    {this.state.level <= 1 ? 
-                    <button className="levelButton" disabled style={{backgroundColor: 'rgba(255,255,255,0.5)'}}>◢</button> :
-                    <button className="levelButton" onClick = { this.decrement }>◢</button>} 
+                {context.level <= 1 ? 
+                <button className="levelButton" disabled style={{backgroundColor: 'rgba(255,255,255,0.5)'}}>◢</button> :
+                <button className="levelButton" onClick = {context.decrementLevel}>◢</button>} 
 
-                    <button className="levelButton" >Niveau {this.state.level} de 24 ▼</button>
+                <button className="levelButton" >Niveau {context.level} de 24 ▼</button>
 
-                    {this.state.level >= 24 ?
-                    <button className="levelButton" disabled style={{backgroundColor: 'rgba(255,255,255,0.5)'}}>◣</button> :
-                    <button className="levelButton" onClick = { this.increment }>◣</button>
-                    }
-                </div>
+                {context.level  >= 24 ?
+                <button className="levelButton" disabled style={{backgroundColor: 'rgba(255,255,255,0.5)'}}>◣</button> :
+                <button className="levelButton" onClick = { context.incrementLevel }>◣</button>
+                }
             </div>
-        )}
-    }
+            )}
+        </LevelContextConsumer>
+    )
+}
+
 
 export default LevelButton

@@ -13,6 +13,7 @@ function App() {
         <LevelContextProvider>
           <Pond className='hello'/>
           <Title/>
+          <LevelButton/>
           <Instructions/>
           <Editor/>
         </LevelContextProvider>
