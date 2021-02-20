@@ -39,7 +39,7 @@ body {
 }
 .text {
   max-width: 600px;
-  margin: 0px 30px;
+  margin: 10px 30px;
   text-align: justify;
   font-size: 15px;
   line-height: 1.5;

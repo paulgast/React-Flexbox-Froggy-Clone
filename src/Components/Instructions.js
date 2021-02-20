@@ -5,11 +5,13 @@ import levelsData from "./levelsData"
 
 function Instructions() {
         return(
-            <LevelContextConsumer>
-                {context => (
-                    <p>{levelsData[context.level].instructions}</p>
-                )}
-            </LevelContextConsumer>
+            <div className='text'>
+                <LevelContextConsumer>
+                    {context => (
+                        <p>{levelsData[context.level].instructions}</p>
+                    )}
+                </LevelContextConsumer>
+            </div>
         )
 
 }
