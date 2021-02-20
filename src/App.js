@@ -4,18 +4,18 @@ import Instructions from "./Components/Instructions"
 import Editor from "./Components/Editor/Editor"
 import Title  from "./Components/Title"
 import LevelButton from "./Components/LevelButton"
-
-import Composant1 from "./Components/Composant1"
+import {LevelContextProvider} from "./Components/LevelContext"
 
 function App() {
   return (
     <div className="App">
       <div className="MContainer">
-        <Pond className='hello'/>
-        <Title/>
-        <Composant1/>
-        <Instructions/>
-        <Editor/>
+        <LevelContextProvider>
+          <Pond className='hello'/>
+          <Title/>
+          <Instructions/>
+          <Editor/>
+        </LevelContextProvider>
       </div>
     </div>
   );

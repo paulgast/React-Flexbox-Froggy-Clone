@@ -1,10 +1,15 @@
 import React, { useContext } from "react"
-import LevelButton from "./LevelButton"
+import {LevelContextConsumer} from "./LevelContext"
+import levelsData from "./levelsData"
 
 
 function Instructions() {
         return(
-            <h1>Hello</h1>
+            <LevelContextConsumer>
+                {level => (
+                    <h1>{levelsData[level].instructions}</h1>
+                )}
+            </LevelContextConsumer>
         )
 
 }

@@ -1,16 +1,15 @@
-import React, { Component } from "react"
+import React from "react"
+const {Provider, Consumer} = React.createContext()
 
-const LevelContext = React.createContext()
-
-class LevelContextProvider extends Component {
+class LevelContextProvider extends React.Component {
     render() {
         return (
-            <LevelContext.Provider value={1}>
+            <Provider value={2}>
                 {this.props.children}
-            </LevelContext.Provider>
+            </Provider>
         )
 
     }
 }
 
-export default LevelContex
+export {LevelContextProvider, Consumer as LevelContextConsumer}
