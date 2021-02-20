@@ -1,4 +1,4 @@
-import React, { useContext } from "react"
+import React from "react"
 import {LevelContextConsumer} from "./LevelContext"
 import levelsData from "./levelsData"
 
@@ -6,8 +6,8 @@ import levelsData from "./levelsData"
 function Instructions() {
         return(
             <LevelContextConsumer>
-                {level => (
-                    <h1>{levelsData[level].instructions}</h1>
+                {context => (
+                    <p>{levelsData[context.level].instructions}</p>
                 )}
             </LevelContextConsumer>
         )
