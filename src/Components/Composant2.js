@@ -4,9 +4,9 @@ import levelsData from "./levelsData"
 
 
 function Composant2() {
-    const msg = useContext(ComposantContext);
+    const level = useContext(ComposantContext);
         return(
-            <h1>{levelsData[0].instructions}</h1>
+            <p>{levelsData[level].instructions}</p>
         )
 
 }
