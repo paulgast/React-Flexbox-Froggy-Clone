@@ -5,7 +5,7 @@ import Editor from "./Components/Editor/Editor"
 import Title  from "./Components/Title"
 import LevelButton from "./Components/LevelButton"
 
-import Composant1 from "./Components/Editor/Composant1"
+import Composant1 from "./Components/Composant1"
 
 function App() {
   return (

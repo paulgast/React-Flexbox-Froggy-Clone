@@ -4,7 +4,7 @@ import { ComposantContext } from "./ComposantContext"
 
 function Composant1 () {
     return(
-    <ComposantContext.Provider value={"Hey"}>
+    <ComposantContext.Provider value={1}>
         <Composant2/>
     </ComposantContext.Provider>
     )
