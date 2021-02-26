@@ -9,9 +9,15 @@ const levelsData = [
             {text: "center : Les éléments s'alignent au centre du conteneur."}, 
             {text: "space-between : Les éléments s'affichent avec un espace égal entre eux."},
             {text: "space-around : Les éléments s'affichent avec un espacement égal à l'entour d'eux."}
-        ]
+        ], 
+        
+        styles: {
+            "#textContainer": {
+              "border": "blue solid 2px;",
+              "background-color": "#ff0;"
+            },
     },
-    {
+
         id: 1,
         instructions: "Utilisez encore justify-content pour aider ces grenouilles à se rendre à leurs nénuphars. Souvenez-vous que cette propriété CSS aligne les éléments horizontalement et accepte les valeurs suivantes :",
         properties: [

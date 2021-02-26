@@ -9,9 +9,9 @@ function LevelButton(props) {
                     {context.level <= 0 ? 
                         <button className="levelButton" disabled style={{backgroundColor: 'rgba(255,255,255,0.5)'}}>◢</button> :
                         <button className="levelButton" onClick = {context.decrementLevel}>◢</button>
-                        } 
+                    } 
 
-                    <button className="levelButton" >Niveau {context.level + 1} de 24 ▼</button>
+                    <button className="levelButton">Niveau {context.level + 1} de 24 ▼</button>
 
                     {context.level  >= 24 ?
                         <button className="levelButton" disabled style={{backgroundColor: 'rgba(255,255,255,0.5)'}}>◣</button> :
