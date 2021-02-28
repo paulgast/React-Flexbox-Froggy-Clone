@@ -1,21 +1,20 @@
 import React from "react"
 import levelsData from "./levelsData"
+import test from '../images/test.jpg';
 
 
 function Pond() {
 
     const frogs = levelsData.map(function(frog){
         return (
-            frog.id
+            frog.instructions[0]
         )
     })
 
-    const imageName = require('./images/frog-green-color-assist.svg')
 
     return(
         <div className="Pound">
             <h3>{frogs}</h3>
-            <img src={imageName}/>
         </div>
     )
 }

@@ -1,8 +1,10 @@
+import test from '../images/test.jpg';
+
 const levelsData = [
 
     {
         id: 0,
-        instructions: "./Components/images/frog-green-color-assist.svg",
+        instructions: {test},
         properties: [
             {text: "flex-start : Les éléments s'alignent au côté gauche du conteneur."},
             {text: "flex-end : Les éléments s'alignent au côté droit du conteneur."}, 
