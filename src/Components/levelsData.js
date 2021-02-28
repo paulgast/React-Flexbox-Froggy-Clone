@@ -2,7 +2,7 @@ const levelsData = [
 
     {
         id: 0,
-        instructions: "Bienvenue à Flexbox Froggy, un jeu où vous aidez Froggy la grenouille et ses amis en écrivant du code CSS! Guidez cette grenouille au nénuphar à la droite de l'étang en utilisant la propriété justify-content, qui aligne les éléments horizontalement et accepte les valeurs suivantes",
+        instructions: "./Components/images/frog-green-color-assist.svg",
         properties: [
             {text: "flex-start : Les éléments s'alignent au côté gauche du conteneur."},
             {text: "flex-end : Les éléments s'alignent au côté droit du conteneur."}, 
