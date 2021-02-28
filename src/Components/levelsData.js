@@ -10,7 +10,6 @@ const levelsData = [
             {text: "space-between : Les éléments s'affichent avec un espace égal entre eux."},
             {text: "space-around : Les éléments s'affichent avec un espacement égal à l'entour d'eux."}
         ], 
-        
         styles: {
             "#textContainer": {
               "border": "blue solid 2px;",

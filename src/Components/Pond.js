@@ -4,9 +4,15 @@ import levelsData from "./levelsData"
 
 
 function Pond() {
+
+    const frogs = levelsData.map(function(frog){
+        return (
+            frog.instructions
+        )
+    })
     return(
         <div className="Pound">
-            <h3>Voici la mare. Elle devra retourner les grenouilles en fonction du niveau</h3>
+            <h3>{frogs}</h3>
         </div>
     )
 }
